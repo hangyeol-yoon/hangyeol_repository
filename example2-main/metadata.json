@@ -1,0 +1,6 @@
+{
+  "name": "Café Lumière",
+  "description": "아늑한 분위기와 프리미엄 스페셜티 커피, 수제 디저트, 원두 라인업 및 예약/픽업 주문을 제공하는 카페 웹사이트",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "서울대학교병원",
+  "description": "환자 중심의 프리미엄 스마트 종합병원 - 진료예약, 전문의 소개, 맞춤형 건강검진, AI 증상 상담 서비스",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

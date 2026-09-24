@@ -1,0 +1,6 @@
+{
+  "name": "NEXT INNOVATION - AI & 클라우드 스타트업",
+  "description": "혁신적인 AI 솔루션과 클라우드 아키텍처, 데이터 분석 및 엔터프라이즈 맞춤 개발을 제공하는 스타트업 공식 대표 홈페이지",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

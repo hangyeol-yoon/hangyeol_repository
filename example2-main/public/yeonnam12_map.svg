@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 750" width="100%" height="100%" style="background-color: #f4f3ef; font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;">
+  <defs>
+    <!-- Shadow filter for pin and overlays -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.22"/>
+    </filter>
+    <filter id="pin-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <linearGradient id="park-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9dd3a8" />
+      <stop offset="100%" stop-color="#72ba81" />
+    </linearGradient>
+  </defs>
+
+  <!-- Base Canvas Background -->
+  <rect width="1000" height="750" fill="#f3f1eb" />
+
+  <!-- City Blocks (Building & Residential Block Outlines) -->
+  <polygon points="10,20 100,20 80,210 10,180" fill="#eae6dc" stroke="#ded8cb" stroke-width="1" />
+  <polygon points="140,20 330,20 280,210 120,210" fill="#e8e4da" stroke="#ded8cb" stroke-width="1" />
+  <polygon points="560,20 850,20 810,180 520,190" fill="#ebe7dd" stroke="#ded8cb" stroke-width="1" />
+  <polygon points="870,20 980,20 980,220 830,200" fill="#eae6dc" stroke="#ded8cb" stroke-width="1" />
+
+  <polygon points="10,260 110,280 80,500 10,460" fill="#eae6dc" stroke="#ded8cb" stroke-width="1" stroke-dasharray="2,2" />
+  <!-- Block between Yeonnam-ro and Park (Where Yeonnam-ro 12 is located) -->
+  <polygon points="150,260 330,280 280,510 120,480" fill="#f5ede0" stroke="#d3c2af" stroke-width="1.5" />
+  <polygon points="520,230 740,220 690,420 480,400" fill="#ebe7dd" stroke="#ded8cb" stroke-width="1" />
+  <polygon points="770,220 980,240 980,480 730,430" fill="#eae6dc" stroke="#ded8cb" stroke-width="1" />
+
+  <!-- Gyeongui Line Forest Trail Park (경의선 숲길 - Green Ribbon running down-right) -->
+  <path d="M 370,-50 L 490,-50 L 670,780 L 550,780 Z" fill="url(#park-grad)" stroke="#5ea86e" stroke-width="2" />
+  
+  <!-- Trees along Forest Trail Park -->
+  <g fill="#4e995e" opacity="0.75">
+    <circle cx="400" cy="30" r="13" /><circle cx="420" cy="90" r="15" />
+    <circle cx="440" cy="150" r="14" /><circle cx="460" cy="210" r="16" />
+    <circle cx="480" cy="270" r="13" /><circle cx="500" cy="330" r="15" />
+    <circle cx="520" cy="390" r="14" /><circle cx="540" cy="450" r="16" />
+    <circle cx="560" cy="510" r="15" /><circle cx="580" cy="570" r="13" />
+    <circle cx="600" cy="630" r="14" />
+  </g>
+
+  <!-- Park Name Label (Centrally along the park) -->
+  <text x="515" y="320" font-size="12" font-weight="900" fill="#1b4d24" transform="rotate(74 515 320)" opacity="0.85">
+    🌿 경의선숲길 (Gyeongui Line Forest Trail Park)
+  </text>
+
+  <!-- Secondary Local Roads -->
+  <path d="M -50,150 L 1050,130" stroke="#ffffff" stroke-width="22" stroke-linecap="round" />
+  <path d="M -50,380 L 1050,350" stroke="#ffffff" stroke-width="26" stroke-linecap="round" />
+
+  <!-- Yeonnam-ro Street (연남로 - Clearly to the LEFT of the Pin) -->
+  <path d="M 90,-50 L 300,800" stroke="#d5cebc" stroke-width="34" opacity="0.3" style="mix-blend-mode: multiply;" />
+  <path d="M 90,-50 L 300,800" stroke="#ffffff" stroke-width="30" />
+  <path d="M 90,-50 L 300,800" stroke="#fffcf5" stroke-width="26" />
+
+  <!-- Yeonnam-ro Street Label -->
+  <g font-size="12" font-weight="bold" fill="#756858">
+    <text x="145" y="120" transform="rotate(74 145 120)">연남로 (Yeonnam-ro)</text>
+    <text x="20" y="375">동교로34길</text>
+    <text x="700" y="340">연희로</text>
+  </g>
+
+  <!-- Side Arrow Indicators for Clarity -->
+  <!-- "연남로 길 우측" Arrow -->
+  <g transform="translate(175, 170)" font-size="10" font-weight="bold" fill="#8c4832">
+    <path d="M 0,0 L 25,0 M 20,-4 L 27,0 L 20,4" stroke="#8c4832" stroke-width="2" fill="none" />
+    <text x="-50" y="4" font-size="10">길 우측</text>
+  </g>
+
+  <!-- "공원 좌측" Arrow -->
+  <g transform="translate(390, 170)" font-size="10" font-weight="bold" fill="#2d5e32">
+    <path d="M 0,0 L -25,0 M -20,-4 L -27,0 L -20,4" stroke="#2d5e32" stroke-width="2" fill="none" />
+    <text x="8" y="4" font-size="10">공원 좌측</text>
+  </g>
+
+  <!-- Major Highway at Bottom: Yanghwa-ro (양화로) -->
+  <path d="M -50,620 Q 500,580 1050,650" stroke="#ffffff" stroke-width="52" />
+  <path d="M -50,620 Q 500,580 1050,650" stroke="#e3ded0" stroke-width="56" opacity="0.4" style="mix-blend-mode: multiply;" />
+  <path d="M -50,620 Q 500,580 1050,650" stroke="#fffae8" stroke-width="46" />
+  <text x="760" y="640" font-size="13" font-weight="bold" fill="#8c7e6c">양화로 (Yanghwa-ro)</text>
+
+  <!-- Subway Lines (Hongik Univ Station Area) -->
+  <path d="M -50,670 Q 500,600 1050,710" stroke="#3ec142" stroke-width="10" fill="none" stroke-linecap="round" />
+  <path d="M 200,750 L 680,510 L 1050,560" stroke="#00a4e3" stroke-width="7" fill="none" stroke-linecap="round" />
+
+  <!-- Recommended Walking Route Dotted Line (From Station Exit 3 -> Park -> Left into Yeonnam-ro 12) -->
+  <path d="M 570,545 L 535,460 L 485,340 L 420,260 L 275,230" stroke="#e53935" stroke-width="3.5" stroke-dasharray="6,6" fill="none" />
+
+  <!-- Hongik Univ. Station Box & Exit 3 Marker -->
+  <g filter="url(#shadow)">
+    <!-- Station main label -->
+    <rect x="580" y="580" width="150" height="36" rx="18" fill="#ffffff" stroke="#3ec142" stroke-width="3" />
+    <circle cx="602" cy="598" r="11" fill="#3ec142" />
+    <text x="602" y="602" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">2</text>
+    <text x="620" y="602" font-size="13" font-weight="bold" fill="#1f1815">홍대입구역</text>
+
+    <!-- Exit 3 Badge -->
+    <rect x="520" y="530" width="135" height="30" rx="15" fill="#fbc02d" stroke="#ffffff" stroke-width="2" />
+    <circle cx="538" cy="545" r="10" fill="#ffffff" />
+    <text x="538" y="549" font-size="11" font-weight="900" fill="#d84315" text-anchor="middle">3</text>
+    <text x="554" y="549" font-size="12" font-weight="bold" fill="#1f1815">3번 출구 (350m)</text>
+  </g>
+
+  <!-- Surrounding POI Badges (Stores, Cafes, Landmarks) -->
+  <!-- 도트블랭킷 (Right side of park) -->
+  <g transform="translate(600, 270)" filter="url(#shadow)">
+    <rect x="0" y="0" width="85" height="22" rx="11" fill="#ffffff" stroke="#e0e0e0" />
+    <circle cx="11" cy="11" r="5" fill="#ff7043" />
+    <text x="22" y="15" font-size="10" font-weight="bold" fill="#424242">도트블랭킷</text>
+  </g>
+
+  <!-- 할리스 (Right side of park) -->
+  <g transform="translate(620, 190)" filter="url(#shadow)">
+    <rect x="0" y="0" width="60" height="22" rx="11" fill="#ffffff" stroke="#e0e0e0" />
+    <circle cx="11" cy="11" r="5" fill="#d32f2f" />
+    <text x="22" y="15" font-size="10" font-weight="bold" fill="#424242">할리스</text>
+  </g>
+
+  <!-- GS25 (Near Yeonnam-ro) -->
+  <g transform="translate(200, 320)" filter="url(#shadow)">
+    <rect x="0" y="0" width="55" height="20" rx="10" fill="#ffffff" stroke="#e0e0e0" />
+    <circle cx="10" cy="10" r="4" fill="#0288d1" />
+    <text x="18" y="14" font-size="9" font-weight="bold" fill="#0288d1">GS25</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- MAIN TARGET LOCATION: 연nam-ro 12 (Café Lumière) -->
+  <!-- RIGHT SIDE OF YEONNAM-RO STREET, LEFT SIDE OF PARK -->
+  <!-- ============================================================ -->
+  <g transform="translate(270, 220)" filter="url(#pin-shadow)">
+    
+    <!-- Pulsing Radar Target Ring -->
+    <circle cx="0" cy="0" r="32" fill="#e53935" opacity="0.2" />
+    <circle cx="0" cy="0" r="22" fill="#e53935" opacity="0.3" />
+
+    <!-- Pin Teardrop Shape -->
+    <path d="M 0 0 C -18 -22 -24 -38 0 -62 C 24 -38 18 -22 0 0 Z" fill="#e53935" stroke="#ffffff" stroke-width="2.5" />
+    <circle cx="0" cy="-42" r="8" fill="#ffffff" />
+    <circle cx="0" cy="-42" r="4" fill="#e53935" />
+
+    <!-- Location Address Label Callout Box Above Pin -->
+    <g transform="translate(0, -74)">
+      <!-- Box Container -->
+      <rect x="-115" y="-48" width="230" height="52" rx="14" fill="#1f1815" stroke="#e53935" stroke-width="2.5" />
+      
+      <!-- Pointer arrow at bottom -->
+      <polygon points="-8,4 8,4 0,11" fill="#1f1815" />
+
+      <!-- Main Badge Icon -->
+      <rect x="-103" y="-36" width="28" height="28" rx="14" fill="#e53935" />
+      <text x="-89" y="-18" font-size="14" text-anchor="middle" fill="#ffffff">📍</text>
+
+      <!-- Text Content inside Callout Box -->
+      <text x="-66" y="-30" font-size="14" font-weight="900" fill="#ffffff">연남로 12</text>
+      <rect x="5" y="-42" width="75" height="16" rx="8" fill="#e53935" />
+      <text x="42" y="-30" font-size="9" font-weight="bold" fill="#ffffff" text-anchor="middle">Café Lumière</text>
+      
+      <text x="-66" y="-12" font-size="11" font-weight="medium" fill="#e8d0b3">연남로 길 우측 / 공원 좌측</text>
+    </g>
+  </g>
+
+  <!-- Top Banner Callout Badge -->
+  <g transform="translate(30, 25)" filter="url(#shadow)">
+    <rect x="0" y="0" width="220" height="34" rx="10" fill="#ffffff" stroke="#c86d51" stroke-width="1.5" />
+    <text x="12" y="22" font-size="11" font-weight="bold" fill="#3d2c27">📍 연남로 길 우측 · 공원 좌측 (연남로 12)</text>
+  </g>
+
+  <!-- Map Provider Watermark (Bottom Right) -->
+  <text x="980" y="730" font-size="10" font-weight="bold" fill="#888888" text-anchor="end" opacity="0.7">
+    Naver Map • 서울 마포구 연남로 12
+  </text>
+</svg>

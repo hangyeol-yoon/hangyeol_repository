@@ -1,0 +1,6 @@
+{
+  "name": "은혜와 평강 교회",
+  "description": "따뜻한 사랑과 은혜가 넘치는 은혜와 평강교회 공식 홈페이지입니다. 예배 안내, 주일 설교 VOD, 주보 보기, 온라인 기도 요청, 새가족 등록, 오시는 길을 제공합니다.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
